@@ -1,0 +1,34 @@
+  Sum of last digit of two given numbers
+
+
+import java.util.Scanner;
+
+public class SumOfLastDigits {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter first number: ");
+        int num1 = sc.nextInt();
+
+        System.out.print("Enter second number: ");
+        int num2 = sc.nextInt();
+
+        int lastDigit1 = num1 % 10;
+        int lastDigit2 = num2 % 10;
+
+        int sum = lastDigit1 + lastDigit2;
+
+        System.out.println("Sum of last digits = " + sum);
+
+        sc.close();
+    }
+}
+
+
+Sample Output
+Enter first number: 123
+Enter second number: 456
+Sum of last digits = 9
+Result
+
+The program was executed successfully and the sum of the last digits of the two given numbers was found.
