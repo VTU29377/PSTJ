@@ -1,0 +1,49 @@
+sortArrayByParit Leetcode
+
+
+class Solution {
+    public int[] sortArrayByParity(int[] nums) {
+        int[] result = new int[nums.length];
+        int index = 0;
+
+        // Add even numbers first
+        for (int num : nums) {
+            if (num % 2 == 0) {
+                result[index++] = num;
+            }
+        }
+
+        // Add odd numbers
+        for (int num : nums) {
+            if (num % 2 != 0) {
+                result[index++] = num;
+            }
+        }
+
+        return result;
+    }
+}
+
+
+
+Accepted
+Runtime: 0 ms
+Case 1
+Case 2
+Input
+nums =
+[3,1,2,4]
+Output
+[2,4,3,1]
+Expected
+[2,4,3,1]
+
+
+
+Input
+nums =
+[0]
+Output
+[0]
+Expected
+[0]
