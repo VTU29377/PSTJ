@@ -1,2 +1,0 @@
-# PSTJ
-Lab tasks
